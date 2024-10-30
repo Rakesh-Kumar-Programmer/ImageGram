@@ -10,3 +10,13 @@ export const findUserByEmail = async (email)=> {
         
     }
 }
+
+export const findAllUsers = async () => {
+    try {
+        const users = await user.find();
+        return users;
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
