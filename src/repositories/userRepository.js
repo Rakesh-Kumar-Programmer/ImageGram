@@ -1,5 +1,5 @@
 import user from "../schema/user";
-import user from "../schema/user";
+
 
 export const findUserByEmail = async (email)=> {
     try {
