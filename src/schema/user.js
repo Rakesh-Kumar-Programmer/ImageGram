@@ -22,5 +22,16 @@ const userschema = new mongoose.Schema({
         lowercase : true,
         maxlength : 50,
         minlength : 5
+    },
+    password : {
+        type : String,
+        required : true,
+        minlength : 8,
+        maxlength : 100
     }
-})    
+
+},{timestamps: true});   
+
+const user = mongoose.model("user",userschema); // user colection
+
+export default user;
